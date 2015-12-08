@@ -1,0 +1,51 @@
+.jumbotron {
+	 background-image: url('./img/wood3.jpg');
+	 background-attachment:fixed;
+	 min-height:500px;
+	 margin-top:0px;
+	 margin-bottom:8px;
+}
+
+.jumbotron p {
+	font-size:15px;
+}
+
+body {
+	margin-top: 100px;
+	margin-bottom: 80px;
+}
+.page-header {
+	margin-top:0;
+}
+
+.panel-body{
+    padding-top:0;
+}
+
+.homeimg{
+	margin-bottom: 15px;
+}
+
+.img-responsive {
+    margin: 0 auto;
+}
+
+#atels{
+	width:400px;
+	height:300px;
+}
+#vards {
+    padding-top: 30px;
+}
+#epasts {
+    padding-top: 30px;
+}
+#vestule {
+    padding-top: 30px;
+	padding-bottom: 50px;
+}
+#lielums {
+	font-size:28px;
+}
+
+
