@@ -6,8 +6,8 @@
          <meta name="viewport" content="width=device-width, initial-scale=1">
 	     <title>The Wood Cube</title>
 		 <link href = "css/bootstrap.min.css" rel = "stylesheet">
-		 <link href="css/bootstrap.min.css" rel="stylesheet">
-		 <link rel="stylesheet" type="text/css" href="article-css.css">
+		 <link rel="stylesheet" href="css/dark.css">
+		 <link rel="stylesheet" type="text/css" href="css/article-css.css">
      </head>
 	 <body>
 	 <!--Majas lapas augsdala-->
@@ -25,6 +25,8 @@
 							 <li><a href = "./produkti.htm">Produkti</a></li>
 							 <li><a href = "./par.htm">Par</a></li>
 							 <li><a href = "#contact" data-toggle = "modal">Kontakti</a></li>
+							 <li><a>|</a></li>
+						 	 <li><a href = "./users.htm">Lietotāji</a></li>
 						 </ul>
 					 </div>
 				 </div>
@@ -116,6 +118,13 @@
 			 
              <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
              <script src="js/bootstrap.min.js"></script>
-			 <script src="path/to/lightbox.js"></script>
+			 <script src="js/lightbox.min.js"></script>	
+			 <script>
+				$(document).delegate('*[data-toggle="lightbox"]','click', function(){
+				event.preventDefault();
+				$(this).ekkoLightbox();
+				});	
+			</script>
+
 	 </body>
 </html>
