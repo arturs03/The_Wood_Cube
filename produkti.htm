@@ -6,7 +6,7 @@
          <meta name="viewport" content="width=device-width, initial-scale=1">
 	     <title>The Wood Cube</title>
 		 <link href = "css/bootstrap.min.css" rel = "stylesheet">
-		 <link href="css/bootstrap.min.css" rel="stylesheet">
+		 <link rel="stylesheet" href="css/dark.css">
 		 <link rel="stylesheet" type="text/css" href="article-css.css">
      </head>
 	 <body>
@@ -43,25 +43,25 @@
 							     <h2 class = "text-center">The Wood Cube statīvi</h2>
 							 </div>
 								<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-										<a class="thumbnail" href="#">
+										<a class="thumbnail" href="./img/3.jpg" data-toggle="lightbox">
 										<img class="img-responsive" id = "atels" src="./img/3.jpg" alt="">
 									</a>
 								</div>
 
 								<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-										<a class="thumbnail" href="#">
+										<a class="thumbnail" href="./img/4.jpg" data-toggle="lightbox">
 										<img class="img-responsive"  id = "atels" src="./img/4.jpg" alt="">
 									</a>
 								</div>
 								
 								<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-										<a class="thumbnail" href="#">
+										<a class="thumbnail" href="./img/5.jpg" data-toggle="lightbox">
 										<img class="img-responsive"  id = "atels" src="./img/5.jpg" alt="">
 									</a>
 								</div>
 								
 								<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-										<a class="thumbnail" href="#">
+										<a class="thumbnail" href="p1.jpg" data-toggle="lightbox">
 										<img class="img-responsive"  id = "atels" src="./img/p1.jpg" alt="">
 									</a>
 								</div	
@@ -140,6 +140,12 @@
 			 
              <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 			 <script src="js/bootstrap.min.js"></script>
-			 <script src="path/to/lightbox.js"></script>
+			<script src="js/lightbox.min.js"></script>	
+			 <script>
+				$(document).delegate('*[data-toggle="lightbox"]','click', function(){
+				event.preventDefault();
+				$(this).ekkoLightbox();
+				});	
+			</script>
 	 </body>
 </html>
