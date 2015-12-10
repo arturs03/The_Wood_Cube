@@ -26,7 +26,7 @@
 							 <li><a href = "./par.htm">Par</a></li>
 							 <li><a href = "#contact" data-toggle = "modal">Kontakti</a></li>
 							 <li><a>|</a></li>
-						 	 <li><a href = "./users.htm">Lietotāji</a></li>
+						 	 <li><a href = "./users.htm">Profils</a></li>
 						 </ul>
 					 </div>
 				 </div>
@@ -66,11 +66,11 @@
 			 <div class = "navbar navbar-default navbar-fixed-bottom">
 			     <div class = "container">
 				     <p class = "navbar-text pull-left">Site Built by Arthur Tkacenko</p>
-					  <a href = "https://plus.google.com/115617876746890191742/posts"class = "navbar-btn btn-danger btn btn pull-right">@gmail.com</a>
-                 </div> 				 
+					  <a href = "#login" data-toggle = "modal" class = "navbar-btn btn-success btn btn pull-right">Pieslēgties</a>
+				 </div> 				 
 		     </div>
 	<!--Majas lapas apaksdala(pop-up box)-->		 
-			 <div class = "modal fade" id = "contact" role = "dialog">
+			<div class = "modal fade" id = "contact" role = "dialog">
 			     <div class = "modal-dialog">
 				     <div class = "modal-content">
 					    <form class = "form- horizontal">
@@ -130,8 +130,53 @@
 						</form>
 					 </div>
 				 </div>
-			 </div>
-			 
+			</div>
+<!--Pieslēgšanās logs-->	
+			<div class = "modal fade" id = "login" role = "dialog">
+			     <div class = "modal-dialog">
+				     <div class = "modal-content">
+					    <form class = "form- horizontal">
+					 
+					        <div class = "modal-header">
+						         <h4>Autorizēšanās</h4>
+						    </div>
+							
+						    <div class = "modal-body" style="overflow:auto;">
+							<form class="form-horizontal">
+									<div class="form-group">
+										<label for="inputEmail3" class="col-sm-2 control-label" id = "epasts">E-pasts</label>
+											<div class="col-sm-10">
+												<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+											</div>
+									</div>
+									<div class="form-group">
+										<label for="inputPassword3" class="col-sm-2 control-label" id = "parole">Parole</label>
+											<div class="col-sm-10">
+												<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+											</div>
+									</div>
+									<div class="form-group">
+										<div class="col-sm-offset-2 col-sm-10">
+											<div class="checkbox">
+												<label><input type="checkbox">Atcerēties mani</label>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="col-sm-offset-2 col-sm-10">
+											<button type="submit" class="btn btn-default">Pieslēgties</button>
+										</div>
+									</div>
+							</form>		
+						    <div class = "modal-footer">
+						         <a class = "btn btn-danger" data-dismiss = "modal">Atcelt</a>
+						         <a class = "btn btn-success" data-dismiss = "modal" type = "submit">Reģistrēties</a>
+							</div>
+						</form>
+					 </div>
+				 </div>
+			</div>
+		 
              <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
              <script src="js/bootstrap.min.js"></script>
 			 <script src="js/lightbox.min.js"></script>	
