@@ -1,5 +1,5 @@
 .jumbotron {
-	 background-image: url('./img/wood3.jpg');
+	 background-image: url('../img/fons1.jpg');
 	 background-attachment:fixed;
 	 min-height:500px;
 	 margin-top:0px;
@@ -39,17 +39,21 @@ body {
 	height:250px;
 }
 #vards {
-    padding-top: 30px;
+    padding-top: 15px;
 }
 #epasts {
-    padding-top: 30px;
+    padding-top: 15px;
 }
 #vestule {
-    padding-top: 30px;
-	padding-bottom: 50px;
+    padding-top: 15px;
+	padding-bottom: 15px;
 }
 #lielums {
 	font-size:28px;
+}
+#parmani {
+	padding-top: 15px;
+	font-size:18px;
 }
 
 
