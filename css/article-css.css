@@ -5,6 +5,13 @@
 	 margin-top:0px;
 	 margin-bottom:8px;
 }
+#fon2{
+	 background-image: url('../img/mezs.jpg');
+	 background-attachment:fixed;
+	 min-height:500px;
+	 margin-top:0px;
+	 margin-bottom:8px;
+}
 
 .jumbotron p {
 	font-size:15px;
@@ -54,6 +61,10 @@ body {
 #parmani {
 	padding-top: 15px;
 	font-size:18px;
+}
+#profila_bilde{
+	width:200px;
+	height:200px;
 }
 
 

@@ -26,7 +26,6 @@
 						     <li><a href = "./index.htm">Sākums</a></li>
 							 <li><a href = "./produkti.htm">Produkti</a></li>
 							 <li><a href = "./par.htm">Par</a></li>
-							 <li><a href = "#contact" data-toggle = "modal">Kontakti</a></li>
 							 <li><a>|</a></li>
 							 <li class = "active"><a href = "./users.htm">Profils</a></li>
 						 </ul>
@@ -35,16 +34,27 @@
 			 </div>
 		 
 	 <!--Majas lapas vidus(galvenais logs**) "header"-->
-	<div class = "jumbotron">	 
+	<div class = "jumbotron" id = "fon2">	 
 	    <div class="container">
 			<div class = "row">
 				<div class = "col-lg-12">
 				     <div class = "panel panel-default">
 					     <div class = "panel-body">
 						     <div class = "page-header">
-							 
-							   
-							</div>
+								<h2>Profils</h2>
+							 </div>
+							<h3>-Lietotājs-</h3>
+								<div class = "col-md-3">
+									<img  src="./img/unknown.jpg" alt="Responsive image" class="img-thumbnail" id = "profila_bilde">
+								</div>
+								<div class = "col-md-9">
+									<h4 id = "profils_vards_uzvards">Vārds Uzvārds</h4>
+									<h4>Par mani</h4>
+									<ul id = "profils_apraksts">
+										<li>Teksts</li>
+									</ul>
+								</div>
+
 						</div>
 				     </div>
 				</div> 
@@ -54,74 +64,11 @@
 	<!--Majas lapas apaksdala-->
 			 <div class = "navbar navbar-default navbar-fixed-bottom">
 			     <div class = "container">
-				     <p class = "navbar-text pull-left">Site Built by Arthur Tkacenko</p>
-					 <a href = "https://plus.google.com/115617876746890191742/posts"class = "navbar-btn btn-danger btn btn pull-right">@gmail.com</a>
+				     <p class = "navbar-text pull-left">Lietotājs - </p>
+					 <a href = "#"class = "navbar-btn btn-danger btn btn pull-right">Iziet</a>
                  </div> 	
 		     </div>
-
-	<!--Majas lapas apaksdala(pop-up box)-->		 
-			 <div class = "modal fade" id = "contact" role = "dialog">
-			     <div class = "modal-dialog">
-				     <div class = "modal-content">
-					    <form class = "form- horizontal">
-					 
-					        <div class = "modal-header">
-						         <h4>Kontakti</h4>
-						    </div>
-							
-						    <div class = "modal-body" style="overflow:auto;">
-						        
-								
-							    <div id = "vards" class = "form-group">
-								     <label for = "contact-name" class = "col-lg-2 control-label">Vārds: </label>
-									 <div class = "col-lg-12">
-									     <input type = "text" class = "form-control" id = "contact-name" placeholder = "Pilns vārds">
-									 </div>
-									
-								</div> 
-								
-							    <div id = "epasts" class = "form-group">
-								     <label for = "contact-email" class = "col-lg-2 control-label">E-pasts: </label>
-									 <div class = "col-lg-12">
-									     <input type = "email" class = "form-control" id = "contact-email" placeholder = "tavs@inbox.lv">
-									 </div>
-									
-								</div> 
-								
-								<div id = "parole" class = "form-group">
-								     <label for = "contact-password" class = "col-lg-2 control-label">Parole: </label>
-									 <div class = "col-lg-12">
-									     <input type = "password" class = "form-control" id = "contact-password" placeholder = "Parole">
-									 </div>
-									
-								</div> 
-								
-								<div id = "vestule" class = "form-group">
-								     <label for = "contact-msg" class = "col-lg-2 control-label">Vēstule: </label>
-									 <div class = "col-lg-12">
-									     <textarea class="form-control" style="resize: vertical;"></textarea>  
-									 </div>
-				
-								</div> 
-								
-								<div id = "bilde" class="form-group">
-									<div class = "col-lg-12">
-									<label for="contact-img">Ievietojiet savu profila bildi: </label>
-									<input type="file" id="contact-img">
-										<p class="help-block">Attēla formāti var būt tikai .jpg un .png</p>
-									</div>
-								</div>
-							   
-						    </div>
-						    <div class = "modal-footer">
-						         <a class = "btn btn-danger" data-dismiss = "modal">Atcelt</a>
-						         <a class = "btn btn-success" data-dismiss = "modal" type = "submit">Reģistrēties</a>
-							</div>
-						</form>
-					 </div>
-				 </div>
-			</div>
-			 
+	<!--Majas lapas apaksdala(pop-up box)-->		 			 
              <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 			 <script src="js/bootstrap.min.js"></script>
 			<script src="js/lightbox.min.js"></script>	
