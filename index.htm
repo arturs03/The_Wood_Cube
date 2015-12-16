@@ -63,7 +63,7 @@
 		 </div>	
 	</div>	 
 	<!--Majas lapas apaksdala-->
-			 <div class = "navbar navbar-default navbar-fixed-bottom">
+			 <div class = "navbar navbar-inverse navbar-fixed-bottom">
 			     <div class = "container">
 				     <p class = "navbar-text pull-left">Site Built by Arthur Tkacenko</p>
 					  <a href = "#login" data-toggle = "modal" class = "navbar-btn btn-success btn btn pull-right">Pieslēgties</a>
@@ -139,6 +139,7 @@
 					 
 					        <div class = "modal-header">
 						         <h4>Autorizēšanās</h4>
+								 
 						    </div>
 							
 						    <div class = "modal-body" style="overflow:auto;">
@@ -146,28 +147,27 @@
 									<div class="form-group">
 										<label for="inputEmail3" class = "col-xs-8 col-sm-8 col-md-12" id = "epasts">E-pasts</label>
 											<div class="col-sm-12">
-												<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+												<input type="email" class="form-control" id="inputEmail3" placeholder="E-pasts">
 											</div>
 									</div>
 									<div class="form-group">
 										<label for="inputPassword3" class = "col-xs-8 col-sm-8 col-md-12" id = "parole">Parole</label>
 											<div class="col-sm-12">
-												<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+												<input type="password" class="form-control" id="inputPassword3" placeholder="Parole">										
 											</div>
 									</div>
 									<div class="form-group">
-										<div class = "col-xs-8 col-sm-8 col-md-12">
+										<div class = "col-xs-8 col-sm-8 col-md-8">
 											<div class="checkbox">
 												<label><input type="checkbox">Atcerēties mani</label>
 											</div>
 										</div>
 									</div>
 									<div class="form-group">
-										<div class = "col-xs-8 col-sm-8 col-md-12">
-											<button type="submit" class="btn btn-success btn pull-right">Pieslēgties</button>
+										<div class = "col-xs-4 col-sm-4 col-md-4">
+											<a class = "btn btn-success btn pull-right"  id = "aut_pies" data-dismiss = "modal"  type = "submit">Pieslēgties</a>
 										</div>
-									</div>
-							</form>	
+								</form>	
 							</div>
 						</form>
 					</div>
@@ -177,6 +177,7 @@
              <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
              <script src="js/bootstrap.min.js"></script>
 			 <script src="js/lightbox.min.js"></script>	
+			 <script src="js/autorizesanas.js"></script>	
 			 <script>
 				$(document).delegate('*[data-toggle="lightbox"]','click', function(){
 				event.preventDefault();
